@@ -4,61 +4,83 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="bootstrap.css" />
     <title>Red-headed Woodpeckers</title>
     <style>
-      img {
-        height: 400px;
-      }
+        img {
+          height: 400px;
+        }
+
+        main {
+            width: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            margin: auto;
+        }
+
+        video {
+          width: 600px;
+          aspect-ratio: 16/9;
+        }
+
+        p {
+          color: red;
+          font-size: 26px;
+          line-height: 30px;
+        }
+
+        @keyframes blink {
+          from {
+            opacity: 1;
+          }
+          to {
+            opacity: 0;
+          }
+        }
+
+        .blink {
+          animation: blink 600ms infinite;
+        }
+
     </style>
   </head>
   <body>
     <header>
-      <h1>Red-headed Woodpeckers</h1>
-      <p>
-        Learn about the red headed woodpecker before it becomes Extinct! This is
-        the place to find out everything about this amazing american bird!
-      </p>
+      <h1 class="blink">Red-headed Woodpeckers</h1>
+      <br />
+        <br />
+
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
+          <li><a class="btn btn-primary" href="index.html">Home</a></li>
+          <li><a class="btn btn-primary" href="about.html">About</a></li>
+          <li><a class="btn btn-primary" href="gallery.html">Gallery</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <img
-        src="image4.JPG"
-        alt="Red-headed Woodpecker 1"
-        style="
-          width: 100%;
-          height: 50vh;
-          object-fit: cover;
-          object-position: center 18%;
-        "
-      />
-      <p>
-        Did you know the Red-headed Woodpecker is one of only four North
-        American woodpeckers known to store food and it is the only one known to
-        cover the stored food with wood or bark. It make its own LARDER!
-      </p>
+      <video autoplay muted><source src="IMG_8217.mov"></source></video>
+     <!--  <iframe width="800" height="480" src="https://www.youtube.com/embed/Mg_FjBsVUmA?autoplay=1" title="YouTube video player"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+        <br />
+        <br />
+
+      <p >The red-headed woodpecker is a captivating and distinctive species of woodpecker with its striking appearance, versatile diet, unique foraging behaviors, and notable vocalizations. It plays an important role in various ecosystems by contributing to insect control and aiding in seed dispersal.</p>
+
+      <br />
+        <br />
+      <a class="btn btn-primary" href="about.html" style="    display: flex;
+    flex-direction: row-reverse;">
+        FIND OUT MORE
+        <img src="woody.png" />
+      </a>
       <br />
       <br />
-      <br />
-      <ul>
-        <li>
-          <p>
-            Omnivorous diet including a wide variety of insects, spiders,
-            earthworks, nuts, seeds, berries, fruit, and occasionally small
-            rodents. May sometimes eat eggs and nestlings of other birds
-          </p>
-        </li>
-      </ul>
-      <section class="intro">
-        <h2>Welcome to Our Red-headed Woodpecker Website</h2>
-        <p>Explore the beauty and behavior of these striking woodpeckers.</p>
-      </section>
+
+      <img src="counter2.gif" style="height: 40px;">
+
     </main>
-    <footer></footer>
   </body>
 </html>
