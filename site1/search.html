@@ -5,16 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="bootstrap.css" />
-    <title>Red-headed Woodpecker Gallery</title>
+    <title>Red-headed Woodpeckers</title>
 
     <style>
-      img {
-        width: 80%;
+      .image-wrap {
+        display: flex;
       }
 
-      .image-container {
-        display: flex;
+      img {
+        height: 180px;
+        padding: 24px 0;
+      }
+
+      li {
+        margin-left: 32px;
+      }
+
+      main {
         width: 700px;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -34,14 +43,14 @@
           <li><a class="btn btn-primary" href="info.html">Info</a></li>
           <li><a class="btn btn-primary" href="gallery.html">Gallery</a></li>
           <li>
-            <img src="hot.gif" style="height: 28px; width: 50px" /><a
+            <img src="hot.gif" style="height: 28px" /><a
               class="btn btn-primary"
               href="about.html"
               >About</a
             >
           </li>
           <li>
-            <img src="new.gif" style="height: 28px; width: 50px" /><a
+            <img src="new.gif" style="height: 28px" /><a
               class="btn btn-primary"
               href="contact.html"
               >Contact Us</a
@@ -52,16 +61,9 @@
       </nav>
     </header>
     <main>
-      <section class="gallery">
-        <h2>Image Gallery</h2>
-        <div class="image-container">
-          <img src="woody.gif" alt="Red-headed Woodpecker 4" />
-          <img src="image1.JPG" alt="Red-headed Woodpecker 1" />
-          <img src="image2.JPG" alt="Red-headed Woodpecker 2" />
-          <img src="image3.JPG" alt="Red-headed Woodpecker 3" />
-          <img src="image4.JPG" alt="Red-headed Woodpecker 4" />
-        </div>
-      </section>
+      <img src="const.gif" />
+      <img src="const2.gif" />
+      <img src="const3.gif" />
     </main>
   </body>
 </html>

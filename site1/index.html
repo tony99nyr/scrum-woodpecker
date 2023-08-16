@@ -7,80 +7,102 @@
     <link rel="stylesheet" href="bootstrap.css" />
     <title>Red-headed Woodpeckers</title>
     <style>
-        img {
-          height: 400px;
-        }
+      img {
+        height: 400px;
+      }
 
-        main {
-            width: 600px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            align-content: center;
-            margin: auto;
-        }
+      main {
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin: auto;
+      }
 
-        video {
-          width: 600px;
-          aspect-ratio: 16/9;
-        }
+      video {
+        width: 600px;
+        aspect-ratio: 16/9;
+      }
 
-        p {
-          color: red;
-          font-size: 26px;
-          line-height: 30px;
-        }
+      p {
+        color: red;
+        font-size: 26px;
+        line-height: 30px;
+      }
 
-        @keyframes blink {
-          from {
-            opacity: 1;
-          }
-          to {
-            opacity: 0;
-          }
+      @keyframes blink {
+        from {
+          opacity: 1;
         }
-
-        .blink {
-          animation: blink 600ms infinite;
+        to {
+          opacity: 0;
         }
+      }
 
+      .blink {
+        animation: blink 600ms infinite;
+      }
     </style>
   </head>
   <body>
     <header>
       <h1 class="blink">Red-headed Woodpeckers</h1>
       <br />
-        <br />
+      <br />
 
       <nav>
         <ul>
           <li><a class="btn btn-primary" href="index.html">Home</a></li>
-          <li><a class="btn btn-primary" href="about.html">About</a></li>
+          <li><a class="btn btn-primary" href="info.html">Info</a></li>
           <li><a class="btn btn-primary" href="gallery.html">Gallery</a></li>
+          <li>
+            <img src="hot.gif" style="height: 28px" /><a
+              class="btn btn-primary"
+              href="about.html"
+              >About</a
+            >
+          </li>
+          <li>
+            <img src="new.gif" style="height: 28px" /><a
+              class="btn btn-primary"
+              href="contact.html"
+              >Contact Us</a
+            >
+          </li>
+          <li><a class="btn btn-primary" href="search.html">Search</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <video autoplay muted><source src="IMG_8217.mov"></source></video>
-     <!--  <iframe width="800" height="480" src="https://www.youtube.com/embed/Mg_FjBsVUmA?autoplay=1" title="YouTube video player"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
-        <br />
-        <br />
+      <video autoplay muted><source src="IMG_8217.mov" /></video>
+      <!--  <iframe width="800" height="480" src="https://www.youtube.com/embed/Mg_FjBsVUmA?autoplay=1" title="YouTube video player"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+      <br />
+      <br />
 
-      <p >The red-headed woodpecker is a captivating and distinctive species of woodpecker with its striking appearance, versatile diet, unique foraging behaviors, and notable vocalizations. It plays an important role in various ecosystems by contributing to insect control and aiding in seed dispersal.</p>
+      <p>
+        The red-headed woodpecker is a captivating and distinctive species of
+        woodpecker with its striking appearance, versatile diet, unique foraging
+        behaviors, and notable vocalizations. It plays an important role in
+        various ecosystems by contributing to insect control and aiding in seed
+        dispersal.
+      </p>
 
       <br />
-        <br />
-      <a class="btn btn-primary" href="about.html" style="    display: flex;
-    flex-direction: row-reverse;">
+      <br />
+      <a
+        class="btn btn-primary"
+        href="about.html"
+        style="display: flex; flex-direction: row-reverse"
+      >
         FIND OUT MORE
         <img src="woody.png" />
       </a>
       <br />
       <br />
 
-      <img src="counter2.gif" style="height: 40px;">
-
+      <img src="counter2.gif" style="height: 40px" />
     </main>
   </body>
 </html>
